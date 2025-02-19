@@ -12,7 +12,7 @@ def metodo_simpson(f, a, b):
     x = a
 
     #Calcula o valor da integral
-    integral = f(a) + f(a+h) + f(b)
+    integral = f(a) + 4 * f(a+h) + f(b)
     integral *= (h/3)
 
     return integral
